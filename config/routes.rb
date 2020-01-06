@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   #get 'static_pages/help'
   
-  #get 'static_pages/searching'
+  get 'static_pages/searching'
 
   #get 'search/result'
 
