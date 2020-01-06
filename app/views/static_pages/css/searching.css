@@ -1,0 +1,70 @@
+#body{
+    text-align: center;
+}
+#navibar{
+    background-color:rgb(245, 243, 226);
+    height: 100 px;
+}
+#signup{
+    float:right;
+    width: 20%;
+}
+
+#navibarright{
+    color: rgb(241, 201, 226);
+    float:right;
+}
+
+#searchtitle{
+    color: rgb(236, 164, 194);
+}
+
+#search{
+    display: inline;
+}
+
+#qualification{
+    display: inline;
+    width: 120px;
+    height: 40px;
+    background-color:rgb(245, 243, 226);
+    border-color: rgb(226, 222, 184);
+    border-radius: 8px;
+    margin-right: 100px;
+    color:rgb(88, 82, 82);
+    font-weight:bold;
+    text-align: center;
+}
+#searchbutton{
+    float: right;
+    width: 120px;
+    height: 40px;
+    background-color:rgb(236, 190, 217);
+    border-color: rgb(226, 222, 184);
+    border-radius: 8px;
+    color:rgb(148, 143, 143);
+
+}
+#showbox{
+    width: 1400px;
+    margin: 0 auto;
+}
+#user{
+    border: solid;
+    height: 450px;
+    border-color: rgb(226, 222, 184);
+    background-color:rgb(245, 243, 226);
+    display: inline-block;
+    margin-right: 70px;
+}
+
+#introduction{
+    margin-left: 10px;
+    position: fixed bottom;
+    border-color: rgb(226, 222, 184);
+    background-color:rgb(245, 243, 226);
+ 
+}
+#match{
+    margin-top: 30px;
+}

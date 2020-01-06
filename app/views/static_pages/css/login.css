@@ -1,0 +1,87 @@
+@charset "UTF-8";
+body {
+	text-align:center;
+    background-color:rgb(238, 215, 229);
+ }
+ #main{
+    text-align: center; /*让div内部文字居中*/
+    background-color: rgb(238, 215, 229);
+    position: relative;
+}
+
+#title{
+    background:rgb(239, 208, 243);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size:24px;
+    height:60px;
+    width:400px;
+    color:white;
+}
+form{
+   
+    background: #FFFFFF ;
+    border-radius: 20px;
+    border:rgb(240, 217, 225) solid 1px;
+    color:#575454;  
+    width:1000px;
+    margin:20px auto;
+    font-size:15px;
+
+}
+table{
+    margin:10px auto;
+}
+a{
+    text-decoration:none;
+}
+input[type="submit"]{
+    background:rgb(239, 208, 243);
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    width:120px;
+    height:40px;
+    border-radius: 10px;
+}
+td:first-child{
+    text-align:right;
+    padding:0 5px;
+}
+td:only-child{
+    text-align:center;
+    font-size:12px;
+}
+span:before{
+    content:"* ";
+    color:#EEE0E0;
+}
+input[type="text"]:read-only{
+    border:#888484 solid 2px;
+    background:#888484;
+    font-weight:bold;  
+    border-radius: 6px; 
+}
+input[type="text"]:hover{
+    background:#EBF1F3;
+}
+
+input[type="text"],input[type="password"]{
+     width:200px;
+     height: 25px;
+     border-color: #FFFFFF;
+     border-radius: 6px; 
+}
+
+tr{
+    height:35px;
+}
+h1{
+    color: rgb(240, 178, 198);
+}
+#js-btn-login{
+	margin-bottom: 10px;
+}

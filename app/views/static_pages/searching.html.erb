@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= stylesheet_link_tag "searching" %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finding</title>
+    <link rel="stylesheet" href="css/searching.css" type="text/css" />
+    <link rel="stylesheet" href="icon/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    
+    <div id=navibar>
+        <img id="navibarimg" src="/image/navibar.png" width=80% height="100 px">
+        <span id="signup">
+            <h1 id="navibarright">婚恋引擎大师 &nbsp;
+                <a href="signup.html">
+                    <i class="fa fa-power-off" aria-hidden="true">退出</i>
+                </a>
+            </h1>  
+        </span>
+    </div>
+    &nbsp;
+    <div id="searchbox">
+        <h2 id="searchtitle">
+                &nbsp;&nbsp;<i class="fa fa-gratipay" aria-hidden="true"></i>搜索意中人
+        </h2>
+        <div id="searchlines">
+            <h3 id="search">
+                &nbsp;&nbsp;&nbsp;&nbsp;搜索条件： 
+            </h3>
+            <select id="qualification">
+                    <option value ="null">年龄</option>
+                    <option value ="age1">18-20</option>
+                    <option value="age2">21-25</option>
+                    <option value="age3">26-30</option>
+                    <option value="age4">30岁以上</option>
+            </select>
+            <select id="qualification">
+                    <option value ="null">性别</option>
+                    <option value ="female">女</option>
+                    <option value="male">男</option>
+            </select>
+            <select id="qualification">
+                    <option value ="null">身高</option>
+                    <option value ="height1">160以下</option>
+                    <option value="height2">160-170</option>
+                    <option value="height3">170-180</option>
+                    <option value="height4">180以上</option>
+            </select>
+            <select id="qualification">
+                    <option value ="null">学历</option>
+                    <option value ="edu1">大专及以下</option>
+                    <option value="edu2">本科</option>
+                    <option value="edu3">硕士</option>
+                    <option value="edu4">博士及以上</option>
+            </select>
+            <select id="qualification">
+                    <option value ="null">月收入</option>
+                    <option value ="earning1">5千以下</option>
+                    <option value="earning2">5千-1万</option>
+                    <option value="earning3">1万-3万</option>
+                    <option value="earning4">3万以上</option>
+            </select>
+            <button id="searchbutton">搜索</button>
+        </div>
+        
+    <hr>
+    </div>
+    <div id="showbox">
+        <div id="match">
+            <div id="user">
+                <img id="userimg" src="/image/user.jpg" width="250 px" height="350 px">
+                <div id="introduction">
+                    车勋
+                </div>      
+            </div>
+            <div id="user">
+                <img id="userimg" src="/image/user.jpg" width="250 px" height="350 px">
+                <div id="introduction">
+                    车勋
+                </div> 
+            </div> 
+            <div id="user">
+                <img id="userimg" src="/image/user.jpg" width="250 px" height="350 px">
+                <div id="introduction">
+                    车勋
+                </div> 
+            </div>  
+            <div id="user">
+                <img id="userimg" src="/image/user.jpg" width="250 px" height="350 px">
+                <div id="introduction">
+                    车勋
+                </div> 
+            </div> 
+        </div>
+
+    </div>
+</body>
+</html>

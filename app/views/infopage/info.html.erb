@@ -1,0 +1,125 @@
+<h1>information page</h1>
+<%= @basicInfo.name %>
+<%= @rc1.name %>
+<%= @rc2.name %>
+<%= @rc3.name %>
+<%= @rc4.name %>
+<%= @rc5.name %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人主页</title>
+    <%= stylesheet_link_tag "infopage" %>
+    <link rel="stylesheet" href="icon/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/personalpage.css" type="text/css" />
+
+</head>
+<body>
+        <div id=navibar>
+            <img id="navibarimg" src="image/navibar.png" width=70% height="100 px">
+            <span id="signup">
+                <h1 id="navibarright">婚恋引擎大师 &nbsp;
+                    <a href="signup.html">
+                        <i class="fa fa-power-off" aria-hidden="true">退出</i>
+                    </a>
+                </h1>  
+            </span>
+        </div>
+        <div id="top">
+            <div id="pinkbar">
+                <h1 id="tag">
+                    Finding your love here <i class="fa fa-gratipay" aria-hidden="true"></i>
+                </h1>
+                <div id="userimg">
+                        <img src="image/user.jpg" width="200 px" height="250 px">  
+                </div>
+            </div>
+            
+        </div>
+        <div id="showbox">
+            <div id="inside" class="main">
+                <h2>
+                    <i class="fa fa-gratipay" aria-hidden="true"></i>内心独白
+                </h2>
+                <div id="block">
+
+                </div>
+            </div>
+            <div id="profile" class="main">
+                <h2>
+                    <i class="fa fa-gratipay" aria-hidden="true"></i>个人资料
+                </h2>
+                <div id="block">
+                <%= @alalyze.sex %>
+                <%= @alalyze.local %>
+                <%= @alalyze.education %>
+                <%= @alalyze.status %>
+                <%= @alalyze.height %>
+                <%= @alalyze.salary %>
+                <%= @alalyze.nation %>
+                <%= @alalyze.shape %>
+                <%= @alalyze.zodiac %>
+                <%= @alalyze.hasChild %>
+                <%= @alalyze.wantChild %>
+                <%= @alalyze.marriageTime %>
+                <%= @alalyze.house %>
+                <%= @alalyze.car %>
+                <%= @alalyze.smoke %>
+                <%= @alalyze.drink %>
+                </div>
+            </div>
+            <div id="interests" class="main">
+                <h2>
+                    <i class="fa fa-gratipay" aria-hidden="true"></i>兴趣爱好
+                </h2>
+                <div id="block">
+                    <%= @favor.song %>
+                    <%= @favor.food %>
+                    <%= @favor.song %>
+                    <%= @favor.thing %>
+                    <%= @favor.man %>
+                </div>
+            </div>
+        </div>
+        <div id="recommend">
+            <div id="rectitle">
+                <h2>猜你喜欢</h2>
+            </div>
+            <div id="recuser">
+                <%= image_tag @rc1.photo ,width:"100" ,height:"100"%>
+                <div id="briefintro">
+                <%= @rc1.introduce %>
+                </div>
+            </div>
+            <div id="recuser">
+                <%= image_tag @rc2.photo ,width:"100" ,height:"100"%>
+                <div id="briefintro">
+                <%= @rc2.introduce %>
+                </div>
+            </div>
+            <div id="recuser">
+                <%= image_tag @rc3.photo ,width:"100" ,height:"100"%>
+                <div id="briefintro">
+                <%= @rc3.introduce %>
+                </div>
+            </div>
+            <div id="recuser">
+                <%= image_tag @rc4.photo ,width:"100" ,height:"100"%>
+                <div id="briefintro">
+                <%= @rc4.introduce %>
+                </div>
+            </div>
+            <div id="recuser">
+                <%= image_tag @rc5.photo ,width:"100" ,height:"100"%>
+                <div id="briefintro">
+                    <%= @rc5.introduce %>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

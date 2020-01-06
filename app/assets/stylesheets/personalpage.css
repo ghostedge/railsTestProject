@@ -1,0 +1,86 @@
+#body{
+    text-align: center;
+}
+#navibar{
+    background-color:rgb(245, 243, 226);
+    height: 100 px;
+}
+#signup{
+    float:right;
+    width: 30%;
+}
+
+#navibarright{
+    color: rgb(241, 201, 226);
+
+}
+#top{
+    width: 100%;
+    height: 200px;
+    background-color:rgb(245, 243, 226);
+    position: relative;
+}
+#pinkbar{
+    height: 150px;
+    background-color:rgb(241, 201, 226);
+}
+h1{
+    color: rgb(245, 243, 226);
+    float: right;
+    margin-right: 10px;
+}
+h2{
+    color: rgb(241, 201, 226);
+    margin-right: 10px;
+}
+#userimg{
+    border: solid;
+    border-color: rgb(226, 222, 184);
+    display: inline-block;
+    margin-left: 200px;
+}
+#showbox{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 65%;
+    display: inline-block;
+}
+
+.main{
+    height: 200px;
+}
+#block{
+    height: 150px;
+    background-color: rgb(241, 201, 226);
+    border-radius: 8px;
+}
+#recommend{
+    width: 25%;
+    border-radius: 8px;
+    background-color: rgb(245, 243, 226);
+    display: inline-block;
+    margin-right: 50px;
+    margin-top: 100px;
+    float: right;
+}
+
+#rectitle{
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    background-color:rgb(241, 201, 226);
+
+}
+#rectitle > h2{
+    color:white;
+}
+#recuser{
+    width: 80%;
+    height: 100px;
+    border: solid;
+    border-radius: 8px;
+    border-color: rgb(167, 156, 142);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
