@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= stylesheet_link_tag "searching" %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finding</title>
+</head>
+<body>
+    <div id=navibar>
+        <img id="navibarimg" src="/image/navibar.png" width=80% height="100 px">
+        <span id="signup">
+            <h1 id="navibarright">婚恋引擎大师 &nbsp;
+                <a href="signup.html">
+                    <i class="fa fa-power-off" aria-hidden="true">退出</i>
+                </a>
+            </h1>  
+        </span>
+    </div>
+    &nbsp;
+    <div id="searchbox">
+        <h2 id="searchtitle">
+                &nbsp;&nbsp;<i class="fa fa-gratipay" aria-hidden="true"></i>搜索意中人
+        </h2>
+        <div id="searchlines">
+            <h3 id="search">
+                &nbsp;&nbsp;&nbsp;&nbsp;搜索条件： 
+            </h3>
+            <%= form_tag controller: "searchpage", action: "proce", method: "post" do %>
+                <%= select_tag "age", options_for_select([ 
+                    "18-20", "21-25", "26-30" ],"18-20") %>  
+                <%= select_tag "sex", options_for_select([ 
+                    "男", "女" ],"男") %>
+                <%= select_tag "height", options_for_select([ 
+                    "160以下", "160-170", "170-180","180以上"],"160以下") %>
+                <%= select_tag "education", options_for_select([ 
+                    "高中及以下","中专","大专","大学本科","硕士","博士"],"高中及以下") %>
+                <%= select_tag "salary", options_for_select([
+                    "3000元以下","3001-5000元","5001-8000元","8001-12000元","12001-20000元",
+                    "20001-50000元","50000以上"],"3000元以下")%>
+                <%= submit_tag '搜索' %>
+            <% end %>
+        </div>
+        
+    <hr>
+    </div>
+    <div id="showbox">
+        <% @basicInfos.each do |basicInfo| %>
+            <div id="showbox">
+            <table>
+            <%= image_tag basicInfo.photo ,width:"100" ,height:"100"%>
+            <td><%= basicInfo.name %></td>
+            <td><%= basicInfo.sex %></td>
+            <td><%= basicInfo.local %></td>
+            <td><%= basicInfo.age %></td>
+            <td><%= basicInfo.education %></td>
+            <td><%= basicInfo.status %></td>
+            <td><%= basicInfo.height %></td>
+            <td><%= basicInfo.salary %></td>
+            <td><%= link_to("查看详情","/infopage/"+basicInfo.id) %></td>
+            </table>
+            </div>
+        <% end %>
+    </div>
+</body>
+<%= will_paginate @basicInfos %>
+</html>

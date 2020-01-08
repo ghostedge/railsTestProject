@@ -1,11 +1,4 @@
 <h1>information page</h1>
-<%= @basicInfo.name %>
-<%= @rc1.name %>
-<%= @rc2.name %>
-<%= @rc3.name %>
-<%= @rc4.name %>
-<%= @rc5.name %>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,31 +85,31 @@
             <div id="recuser">
                 <%= image_tag @rc1.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
-
+                <%= link_to("查看详情","/infopage/"+@rc1.id) %>
                 </div>
             </div>
             <div id="recuser">
                 <%= image_tag @rc2.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
-                
+                <%= link_to("查看详情","/infopage/"+@rc2.id) %>
                 </div>
             </div>
             <div id="recuser">
                 <%= image_tag @rc3.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
-                
+                <%= link_to("查看详情","/infopage/"+@rc3.id) %>
                 </div>
             </div>
             <div id="recuser">
                 <%= image_tag @rc4.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
-                
+                <%= link_to("查看详情","/infopage/"+@rc4.id) %>
                 </div>
             </div>
             <div id="recuser">
                 <%= image_tag @rc5.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
-                
+                <%= link_to("查看详情","/infopage/"+@rc5.id) %>
                 </div>
             </div>
         </div>
