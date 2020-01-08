@@ -28,7 +28,7 @@
                     Finding your love here <i class="fa fa-gratipay" aria-hidden="true"></i>
                 </h1>
                 <div id="userimg">
-                        <img src="image/user.jpg" width="200 px" height="250 px">  
+                <%= image_tag @basicInfo.photo ,width:"200" ,height:"250"%>
                 </div>
             </div>
             
@@ -47,22 +47,22 @@
                     <i class="fa fa-gratipay" aria-hidden="true"></i>个人资料
                 </h2>
                 <div id="block">
-                <%= @alalyze.sex %>
-                <%= @alalyze.local %>
-                <%= @alalyze.education %>
-                <%= @alalyze.status %>
-                <%= @alalyze.height %>
-                <%= @alalyze.salary %>
-                <%= @alalyze.nation %>
-                <%= @alalyze.shape %>
-                <%= @alalyze.zodiac %>
-                <%= @alalyze.hasChild %>
-                <%= @alalyze.wantChild %>
-                <%= @alalyze.marriageTime %>
-                <%= @alalyze.house %>
-                <%= @alalyze.car %>
-                <%= @alalyze.smoke %>
-                <%= @alalyze.drink %>
+                <p>性别：<%= @sexdict.index(@alalyze.sex) %>
+                住址：<%= @alalyze.local %>
+                教育背景：<%= @educationdict.index(@alalyze.education) %></p>
+                <p>婚姻状况：<%= @statusdict.index(@alalyze.status) %>
+                身高：<%= @alalyze.height %>
+                月收入情况：<%= @salarydict.index(@alalyze.salary) %></p>
+                <p>民族：<%= @alalyze.nation %>
+                体型：<%= @shapedict.index(@alalyze.shape) %>
+                星座：<%= @zodiacdict.index(@alalyze.zodiac) %></p>
+                <p>有孩子：<%= @hasChilddict.index(@alalyze.hasChild) %>
+                想要孩子：<%= @wantChilddict.index(@alalyze.wantChild) %>
+                结婚时间：<%= @marriageTimedict.index(@alalyze.marriageTime) %></p>
+                <p>房子：<%= @housedict.index(@alalyze.house) %>
+                车子：<%= @cardict.index(@alalyze.car) %>
+                抽烟：<%= @smokedict.index(@alalyze.smoke) %>
+                饮酒：<%= @drinkdict.index(@alalyze.drink) %></p>
                 </div>
             </div>
             <div id="interests" class="main">
@@ -70,11 +70,10 @@
                     <i class="fa fa-gratipay" aria-hidden="true"></i>兴趣爱好
                 </h2>
                 <div id="block">
-                    <%= @favor.song %>
-                    <%= @favor.food %>
-                    <%= @favor.song %>
-                    <%= @favor.thing %>
-                    <%= @favor.man %>
+                    <p>最喜欢的歌：<%= @favor.song %></p>
+                    <p>最喜欢的食物：<%= @favor.food %></p>
+                    <p>最喜欢的东西：<%= @favor.thing %></p>
+                    <p>最喜欢的人：<%= @favor.man %></p>
                 </div>
             </div>
         </div>
@@ -85,30 +84,40 @@
             <div id="recuser">
                 <%= image_tag @rc1.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
+                姓名：<%= @rc1.name %>
+                城市：<%= @rc1.local %>
                 <%= link_to("查看详情","/infopage/"+@rc1.id) %>
                 </div>
             </div>
             <div id="recuser">
                 <%= image_tag @rc2.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
+                姓名：<%= @rc2.name %>
+                城市：<%= @rc2.local %>
                 <%= link_to("查看详情","/infopage/"+@rc2.id) %>
                 </div>
             </div>
             <div id="recuser">
                 <%= image_tag @rc3.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
+                姓名：<%= @rc3.name %>
+                城市：<%= @rc3.local %>
                 <%= link_to("查看详情","/infopage/"+@rc3.id) %>
                 </div>
             </div>
             <div id="recuser">
                 <%= image_tag @rc4.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
+                姓名：<%= @rc4.name %>
+                城市：<%= @rc4.local %>
                 <%= link_to("查看详情","/infopage/"+@rc4.id) %>
                 </div>
             </div>
             <div id="recuser">
                 <%= image_tag @rc5.photo ,width:"100" ,height:"100"%>
                 <div id="briefintro">
+                姓名：<%= @rc5.name %>
+                城市：<%= @rc5.local %>
                 <%= link_to("查看详情","/infopage/"+@rc5.id) %>
                 </div>
             </div>
