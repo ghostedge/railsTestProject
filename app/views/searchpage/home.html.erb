@@ -17,6 +17,14 @@
             <i class="fa fa-power-off" aria-hidden="true">退出</i>
         </a>
     </h1>  
+    <% if !@username %>
+    <%= link_to "注册","/applicants/new" %>
+    <%= link_to "登录","/sessions/new"  %>
+    <% end %>
+    <% if @username %>
+    <%= "欢迎回来，"+@username %>
+    <%= link_to"登出","/sessions/destroy" %>
+    <% end %>
 </span>
 </div>
 &nbsp;

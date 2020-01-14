@@ -1,5 +1,8 @@
 class SearchpageController < ApplicationController
   def home
+    if params[:user]
+      @username = params[:user]
+    end
   end
 
   def proce 
